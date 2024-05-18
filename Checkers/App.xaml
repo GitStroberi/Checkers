@@ -1,0 +1,19 @@
+﻿<Application x:Class="Checkers.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Checkers"
+             xmlns:viewModel="clr-namespace:Checkers.MVVM.ViewModel"
+             xmlns:view="clr-namespace:Checkers.MVVM.View"
+             >
+    <Application.Resources>
+        
+        <DataTemplate DataType="{x:Type TypeName=viewModel:HomeViewModel}">
+            <view:HomeView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type TypeName=viewModel:BoardViewModel}">
+            <view:BoardView />
+        </DataTemplate>
+
+    </Application.Resources>
+</Application>
